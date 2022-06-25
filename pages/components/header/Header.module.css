@@ -1,0 +1,49 @@
+.headerOuter {
+    /* width: 100%; */
+    padding: 10px;
+    background: #fac146;
+    box-shadow: 0 8px 12px 0 rgb(0 0 0 / 10%), 0 8px 12px 0 rgb(0 0 0 / 20%);
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+.headerOuterDark {
+    /* width: 100%; */
+    padding: 10px;
+    background: #2e2e2e;
+    box-shadow: 0 8px 12px 0 rgb(0 0 0 / 10%), 0 8px 12px 0 rgb(0 0 0 / 20%);
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+.headerName{
+    color: white;
+    font-size: 2em;
+    font-weight: 550;
+    width: 100%;
+    padding-left: 20px;
+}
+.headerNameDark{
+    color: rgb(175, 175, 175);
+    font-size: 2em;
+    font-weight: 550;
+    width: 100%;
+    padding-left: 20px;
+}
+.headerIcon{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+.darkModeIcon{
+    color: white;
+    width: 32px;
+    height: 32px;
+}
+.darkModeIconDark{
+    color: white;
+    width: 32px;
+    height: 32px;
+    color: rgb(175, 175, 175);
+
+}

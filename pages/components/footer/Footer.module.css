@@ -1,0 +1,44 @@
+.outerFooter{
+    min-height: 150px;
+    display: flex;
+    background: rgb(235, 234, 234);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.outerFooterDark{
+    min-height: 150px;
+    display: flex;
+    background: rgb(175, 175, 175);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.FooterIcon{
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+.FooterTitle{
+    color: rgb(0, 0, 0);
+    font-size: 1.25em;
+    font-weight: 450;
+    width: 100%;
+    padding-left: 10px;
+}
+.footerTitleDiv{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.footerYearDiv{
+    display: flex;
+    align-items: center;
+}
+.FooterYear{
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    font-weight: 450;
+    width: 100%;
+    padding-left: 10px;
+}

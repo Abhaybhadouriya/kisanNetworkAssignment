@@ -1,0 +1,55 @@
+.outerMenuTab{
+    background: white;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.outerMenuTabDark{
+    background:  #2e2e2e;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.innerMenuSelected{
+    width: 50%;
+    border-bottom: 4px solid #fac146;
+    text-align: center;
+    font-size: 1.35em;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+.innerMenuSelectedDark{
+    width: 50%;
+    border-bottom: 4px solid #cf0606;
+    text-align: center;
+    font-size: 1.35em;
+    font-weight: 400;
+     cursor: pointer;
+
+}
+
+.innerMenu{
+    width: 50%;
+    text-align: center;
+    font-size: 1.35em;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.menuText{
+    color: black;
+    font-size: 1em;
+    font-weight: 550;
+    width: 100%;
+    padding-left: 20px;
+}
+.menuTextDark{
+    color: rgb(175, 175, 175);
+    font-size: 1em;
+    font-weight: 550;
+    width: 100%;
+    padding-left: 20px;
+}

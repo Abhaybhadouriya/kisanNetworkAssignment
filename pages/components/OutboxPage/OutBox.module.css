@@ -1,0 +1,72 @@
+.outerDiv{
+ flex-direction: column;
+ display: flex;
+ padding: 10px;
+ background: hsl(41, 100%, 93%);;  
+ min-height: 80vh;  
+}
+.outerDivDark{
+    flex-direction: column;
+    display: flex;
+    padding: 10px;
+    background: rgb(175, 175, 175);   
+    min-height: 80vh;   
+   }
+   .inputSearch{
+    width: 100%;
+    font-size: 22px;
+    padding: 5px;
+    border: 2px solid #fac146;
+    border-radius: 15px;
+}
+.inputSearchDark{
+    width: 100%;
+    font-size: 22px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background: #2e2e2e;
+    color: rgb(175, 175, 175);
+}
+
+.ContactListDivIcon{
+    border-radius: 50%;
+   padding: 5px;
+   height: 28px;
+   width: 28px;
+   font-size: 22px;
+   color: rgb(255, 255, 255);
+   display: flex;
+  justify-content: center;
+}
+.ContactListDivDetails{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.ContactListDivText{
+    font-size: 1.25em;
+    font-weight: 450;
+    color: black;
+}
+.ContactListDivTextDark{
+    font-size: 1.25em;
+    font-weight: 450;
+    color: rgb(175, 175, 175);
+}
+.ContactListDiv{
+    border-radius: 5px;
+    border: 1px solid #fac146;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    display: flex;
+    flex-direction:column;
+}
+.ContactListDivDark{
+    border-radius: 5px;
+    border: 1px solid #9c741d;
+    background: #2e2e2e;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}

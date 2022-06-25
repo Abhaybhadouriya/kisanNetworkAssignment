@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import ContactList from "./contactList/ContactList";
-import Footer from "./footer/footer";
-import Header from "./header/header";
-import MenuTab from "./menuTab/menuTab";
+import Footer from "./Footer/footer";
+import Header from "./Header/header";
+import MenuTab from "./MenuTab/menuTab";
 import OutboxPage from "./OutboxPage/OutboxPage";
 import Head from "next/head";
 const MainPage = () => {

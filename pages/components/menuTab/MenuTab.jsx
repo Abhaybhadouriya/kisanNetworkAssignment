@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "./MenuTab.module.css";
+import styles from "./MenuTabcss.module.css";
 
 const MenuTab = (props) => {
     let outerMenuTab = props.darkMode? styles.outerMenuTabDark :styles.outerMenuTab;

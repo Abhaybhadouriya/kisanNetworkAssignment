@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-import styles from "./ContactList.module.css";
+import styles from "./ContactListcss.module.css";
 import myData from "../../../public/contactlist.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import Model from "./Model";
 
 const ContactList = (props) => {
-
   let outerDivClass = props.darkMode
     ? styles.outerDivClassDark
     : styles.outerDivClass;
@@ -23,7 +22,6 @@ const ContactList = (props) => {
     ? styles.inputSearchDark
     : styles.inputSearch;
 
-
   useEffect(() => {
     console.log(myData);
   }, []);
@@ -34,7 +32,7 @@ const ContactList = (props) => {
   const [opendetailsPan, setopendetailsPan] = useState(-1);
   const ChangeOpenDetailsPan = (e) => {
     opendetailsPan === e ? setopendetailsPan(-1) : setopendetailsPan(e);
-    console.log(e)
+    console.log(e);
   };
 
   const [sendData, setsendData] = useState([]);
@@ -73,8 +71,13 @@ const ContactList = (props) => {
           />
         ) : null;
       })}
-      {modalShow?
-      <Model data={sendData} darkMode={props.darkMode} setModalShow={setModalShow}/>:null}
+      {modalShow ? (
+        <Model
+          data={sendData}
+          darkMode={props.darkMode}
+          setModalShow={setModalShow}
+        />
+      ) : null}
     </div>
   );
 };
@@ -84,12 +87,10 @@ export default ContactList;
 const ListItemType = (data) => {
   return (
     <div style={{ padding: 10 }}>
-      <div
-        className={data.ContactListDiv}
-       
-      >
-        <div style={{ display: "flex", flexDirection: "row" }}
-         onClick={() => data.ChangeOpenDetailsPan(data.index)}
+      <div className={data.ContactListDiv}>
+        <div
+          style={{ display: "flex", flexDirection: "row" }}
+          onClick={() => data.ChangeOpenDetailsPan(data.index)}
         >
           <div
             className={styles.ContactListDivIcon}
@@ -121,8 +122,7 @@ const ListItemType = (data) => {
               </span>
               <button
                 onClick={() => {
-                  data.setSendDataFunction(data.data),
-                  data.setModalShow(true);
+                  data.setSendDataFunction(data.data), data.setModalShow(true);
                 }}
                 style={{
                   display: "flex",
@@ -150,5 +150,3 @@ function getRandomColor() {
   const randomColor = `hsl(${h}deg, 50%, 50%)`;
   return randomColor;
 }
-
-

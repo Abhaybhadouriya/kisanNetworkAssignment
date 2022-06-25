@@ -1,6 +1,6 @@
 import { edit } from "fontawesome";
 import React from "react";
-import styles from "./OutBox.module.css";
+import styles from "./OutBoxcss.module.css";
 
 const OutboxPage = (props) => {
   let outerDiv = props.darkMode ? styles.outerDivDark : styles.outerDiv;

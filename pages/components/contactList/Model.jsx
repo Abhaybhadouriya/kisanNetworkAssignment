@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import styles from "./model.module.css";
+import React, { useState, useEffect } from "react";
+import styles from "./modelcss.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPaperPlane,
@@ -18,12 +18,19 @@ const Model = (props) => {
     ? styles.ContactListButtonDark
     : styles.ContactListButton;
 
-  const [otpDigits, setotpDigits] = React.useState("");
+  const [otpDigits, setotpDigits] = useState("");
+  const [firstName, setfirstName] = useState("")
+  const [lastName, setlastName] = useState("")
+  const [mobileNo, setmobileNo] = useState("")
   useEffect(() => {
+
     setotpDigits(Math.floor(100000 + Math.random() * 900000));
+    setfirstName(props.data["firstName"])
+    setlastName(props.data["lastName"])
+    setmobileNo(props.data["mobileno"])
   }, []);
 
-  const [isOTPisSented, setisOTPisSented] = React.useState(false);
+  const [isOTPisSented, setisOTPisSented] = useState(false);
   const loadPost = async () => {
     let dataPost = { mobileno: props.data["mobileno"], otp: otpDigits };
     try {
@@ -67,7 +74,7 @@ const Model = (props) => {
             &times;
           </span>
           <p className={ContactListDivText}>
-            {props.data["firstName"] + " " + props.data["lastName"]}
+            {firstName + " " + lastName}
           </p>
           <p
             className={ContactListDivText}
@@ -76,7 +83,7 @@ const Model = (props) => {
             Hi. Your OTP is: {otpDigits}
           </p>
           <p className={ContactListDivText}>
-            Click send to get OTP on your Mobile no : +{props.data["mobileno"]}
+            Click send to get OTP on your Mobile no : +{mobileNo}
           </p>
 
           {isOTPisSented ? (
